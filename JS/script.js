@@ -20,21 +20,19 @@ breakpoints: {
 
 
 var button = document.querySelector('.brands--show-all');
-var hideSlides = document.querySelectorAll('.slider__item--hidden');
+var hideSlides = document.querySelector('.slider__wrapper');
 var isOpened = false;
 
 button.addEventListener('click', function () {
-	for (let i = 0; i < hideSlides.length; i++) {
-		hideSlides[i].classList.toggle('slider__item--hidden');
-		button.classList.toggle('brands--show-all--opened');
-	
+ 		
+	button.classList.toggle('brands--show-all--opened');
+	hideSlides.classList.toggle('swiper__ass');
 	if (!isOpened) {
 		button.textContent = 'Скрыть';	
 		isOpened = true;
 	} else {
-		button.textContent = 'Показать все';
-		isOpened = false;
-	}
+		button.textContent = 'Показать все';	
+		isOpened = false;	
 	}
 	
 });

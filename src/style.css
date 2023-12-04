@@ -72,9 +72,6 @@ html {
 	align-items: center;	
 	padding-left: 16px;
 }
-.slider__item {
-	margin-right: 32px;
-}
 
 .text__button {
 	display: none;
@@ -118,6 +115,15 @@ html {
 		padding-left: 24px;
 	}
 
+	.slider__wrapper {
+		height: 168px;
+		overflow: hidden;
+	}
+
+	.swiper__ass {
+		height: 100%;
+	}
+
 	.swiper-wrapper {
 		display: flex;
 		gap: 24px;
@@ -130,10 +136,6 @@ html {
 		margin: 0 !important;
 		width: 206px !important;
 		background-position: 168px 16px;
-	}
-
-	.slider__item--hidden {
-		display: none;
 	}
 
 	.text__button {
@@ -176,14 +178,6 @@ html {
 		padding-left: 32px;
 	}
 
-	.slider__item--hidden {
-		display: none;
-	}	
-
-	.slider__item-desktop-show {
-		display: flex;
-	}
-	
 	.swiper-wrapper {
 		display: flex;
 		gap: 32px;
